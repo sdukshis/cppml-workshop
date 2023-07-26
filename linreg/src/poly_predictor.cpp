@@ -4,5 +4,5 @@
 #include <iostream>
 
 double PolyPredictor::predict(const features& feat) const {
-    return LinregPredictor::predict(poly_feat);    
+    return LinregPredictor::predict(feat);    
 }

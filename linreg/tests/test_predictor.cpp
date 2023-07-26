@@ -9,7 +9,7 @@
 #include <helpers.h>
 
 TEST(DISABLED_LinregPredictor, compare_to_python) {
-    std::vector<double> coef = {0.0, 0.0};
+    std::vector<double> coef = {0, 0};
 
     auto predictor = LinregPredictor{coef};
 

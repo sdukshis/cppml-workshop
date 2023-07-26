@@ -42,7 +42,7 @@ MlpClassifier::MlpClassifier(const Eigen::MatrixXf& w1, const Eigen::MatrixXf& w
 {}
 
 size_t MlpClassifier::num_classes() const {
-    return w2_.cols();
+    return w2_.rows();
 }
 
 
@@ -59,9 +59,10 @@ MlpClassifier::probas_t MlpClassifier::predict_proba(const features_t& feat) con
     }
 
     // Add your code here
-
+   
     probas_t res;
     // Add your code here
+   
 
     return res;
 }
