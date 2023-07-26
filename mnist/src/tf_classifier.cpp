@@ -70,8 +70,8 @@ size_t TfClassifier::num_classes() const {
 
 size_t TfClassifier::predict(const features_t& feat) const {
     auto proba = predict_proba(feat);
-    auto argmax = std::max_element(proba.begin(), proba.end());
-    return std::distance(proba.begin(), argmax);
+    // Add your code here
+    return 0;
 }
 
 TfClassifier::probas_t TfClassifier::predict_proba(const features_t& feat) const {

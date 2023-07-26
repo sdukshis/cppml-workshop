@@ -28,6 +28,8 @@ add_library(${PROJECT_NAME}
     ${HRDS}
 )
 
+target_link_directories(${PROJECT_NAME} PUBLIC ${CONAN_LIB_DIRS_BOOST})
+
 target_link_libraries(${PROJECT_NAME} PUBLIC
     CONAN_PKG::eigen
     tensorflow

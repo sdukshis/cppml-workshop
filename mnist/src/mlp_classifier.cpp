@@ -48,8 +48,8 @@ size_t MlpClassifier::num_classes() const {
 
 size_t MlpClassifier::predict(const features_t& feat) const {
     auto proba = predict_proba(feat);
-    auto argmax = std::max_element(proba.begin(), proba.end());
-    return std::distance(proba.begin(), argmax);
+    // Add your code here
+    return 0;
 }
 
 MlpClassifier::probas_t MlpClassifier::predict_proba(const features_t& feat) const {
